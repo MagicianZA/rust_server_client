@@ -17,18 +17,16 @@ mod tests {
     }
 }
 
-mod socket_server
+pub mod socket_server
 {
     pub fn start_server()
     {
         let listener = std::net::TcpListener::bind("127.0.0.1:7878").unwrap();
-        println!("hello 2");
         for stream in listener.incoming() {
             let stream = stream.unwrap();
 
             println!("Connection established! {:?}", stream.local_addr());
             break;
         }
-        println!("hello 3");
     } 
 }

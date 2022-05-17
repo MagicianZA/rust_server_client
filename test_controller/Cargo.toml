@@ -6,4 +6,5 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+socket_server = { path = "../socket_server" }
 socket_client = { path = "../socket_client" }
