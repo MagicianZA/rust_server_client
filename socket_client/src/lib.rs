@@ -17,10 +17,17 @@ mod tests {
 }
 
 
-mod socket_client
+pub mod socket_client
 {
     pub fn start_client()
     {
-        std::net::TcpStream::connect("localhost:7878");
+        match std::net::TcpStream::connect("www.google.com:80"){
+            Ok(mut stream) => {
+                println!("Successfully connected to server in port 3333");
+            },
+            Err(e) => {
+                println!("Failed to connect: {}", e);
+            }
+        }
     }
 }
