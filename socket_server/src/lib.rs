@@ -1,19 +1,9 @@
 #[cfg(test)]
 mod tests {
-    use super::*;
-
     #[test]
     fn it_works() {
         let result = 2 + 2;
         assert_eq!(result, 4);
-    }
-
-    #[test]
-    fn test_socket()
-    {
-        println!("hello");
-        socket_server::start_server();
-        assert_eq!(1, 1);
     }
 }
 
