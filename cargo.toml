@@ -1,0 +1,7 @@
+[workspace]
+
+members = [
+    "socket_server",
+    "socket_client",
+    "test_controller",
+]

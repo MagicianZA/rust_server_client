@@ -1,7 +1,5 @@
 #[cfg(test)]
 mod tests {
-    use crate::socket_client::start_client;
-
     use super::*;
     #[test]
     fn it_works() {
