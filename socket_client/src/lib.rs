@@ -21,8 +21,8 @@ pub mod socket_client
 {
     pub fn start_client()
     {
-        match std::net::TcpStream::connect("www.google.com:80"){
-            Ok(mut stream) => {
+        match std::net::TcpStream::connect("127.0.0.1:7878"){
+            Ok(_stream) => {
                 println!("Successfully connected to server in port 3333");
             },
             Err(e) => {

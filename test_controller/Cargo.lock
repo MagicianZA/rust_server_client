@@ -7,8 +7,13 @@ name = "socket_client"
 version = "0.1.0"
 
 [[package]]
+name = "socket_server"
+version = "0.1.0"
+
+[[package]]
 name = "test_controller"
 version = "0.1.0"
 dependencies = [
  "socket_client",
+ "socket_server",
 ]
